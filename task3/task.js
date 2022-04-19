@@ -1,6 +1,6 @@
 const sliders = document.querySelector('.slider')
-var sliderItems = Array.from(sliders.getElementsByClassName('slider__item'))
-var num = 0
+let sliderItems = Array.from(sliders.getElementsByClassName('slider__item'))
+let num = 0
 const foo = (slide1, slide2) => {
     slide1.classList.toggle('slider__item_active');
     slide2.classList.remove('slider__item_active');
