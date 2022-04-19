@@ -13,8 +13,8 @@ window.addEventListener('click', event => {
             foo(sliderItems[num + 1], sliderItems[num])
             num = num + 1;
         } else {
-            foo(sliderItems[num - 4], sliderItems[num])
-            num = num - 4;
+            foo(sliderItems[num - (sliderItems.length - 1)], sliderItems[num])
+            num = num - (sliderItems.length - 1);
         }
     } else if (event.target.classList.contains('slider__arrow_prev')) {
         if (num > 0) {
